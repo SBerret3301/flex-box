@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Document</title>
+</head>
+<style>
+    /* Styles for the container div */
+    div { 
+        display: flex; /* Use flexbox layout for the container */
+        width: 650px; /* Set the width of the container */
+        height: 180px; /* Set the height of the container */
+    }
+
+    /* Styles for child paragraphs inside the container */
+    div > p {
+        width: 50%; /* Set the width of each paragraph to 50% of the container */
+        background-color: rgb(41, 95, 95); /* Set the background color */
+        height: 28%; /* Set the height of each paragraph */
+        text-align: center; /* Center-align text within the paragraph */
+        margin: 0px; /* Remove default margin */
+        padding-top: 20px; /* Add top padding */
+        padding-bottom: 20px; /* Add bottom padding */
+    }
+
+    /* Styles for paragraphs with class 'p' */
+    .p {
+        color: white; /* Set text color to white */
+        align-self: flex-end; /* Align the paragraph to the flex-end (bottom) of the container */
+        font-size: 3em; /* Set the font size */
+    }
+
+    /* Styles for paragraphs with class 'i' */
+    .i {
+        color: white; /* Set text color to white */
+        font-size: 3em; /* Set the font size */
+    }
+</style>
+<body>
+    <!-- Container div with paragraphs -->
+    <div>
+        <p class="i">1</p>
+        <p class="p">2</p>
+        <p class="i">3</p>
+        <p class="p">4</p>
+        <p class="i">5</p>
+        <p class="p">6</p>
+    </div>
+</body>
+</html>
